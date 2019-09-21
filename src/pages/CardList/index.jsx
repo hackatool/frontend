@@ -21,47 +21,54 @@ export default function CardList() {
                 <img src={search} alt="search" />
             </nav>
 
-            <div className="container">
+            <div className="container-wrapper">
+                {/* POG (WOP) > GO HORSE */}
+                <div className="container">
 
-                <Link to="/user">
-                    <div className="card profile">
-                        <img src={homealone} alt="profile pic" />
-                        <h2 className="username">user</h2>
-                        <span className="description">Developer <br /> UI/UX </span>
-                    </div>
-                </Link>
+                    <Link to="/user">
+                        <div className="card profile">
 
-                <div className="card counter">
-                    <img src={computer_icon} alt="computer icon" />
-                    <span className="count">319</span>
+                            <div className="profilepic-wrapper">
+                                <img src={homealone} alt="profile pic" />
+                            </div>
 
-                    <span className="description">
-                        Hackathons participados
+                            <h2 className="username">user</h2>
+                            <span className="description">Developer <br /> UI/UX </span>
+                        </div>
+                    </Link>
+
+                    <div className="card counter">
+                        <img src={computer_icon} alt="computer icon" />
+                        <span className="count">319</span>
+
+                        <span className="description">
+                            Hackathons participados
                     </span>
 
-                </div>
-
-                <div className="card list hacks">
-                    <h2>Últimos Hackathons</h2>
-                    <div className="empty">
-                        <span>
-                            Adicione já
-                </span>
                     </div>
 
-                    <Link to="/hackathons">
-                        mais>>>
+                    <div className="card list hacks">
+                        <h2>Últimos Hackathons</h2>
+                        <div className="empty">
+                            <span>
+                                Adicione já
+                </span>
+                        </div>
+
+                        <Link to="/hackathons">
+                            mais>>>
                     </Link>
-                </div>
-
-                <div className="card list projects">
-                    <h2>Últimos Projetos</h2>
-                    <div className="empty">
-                        <span>
-                            Adicione seus projetos
-                </span>
                     </div>
-                    <a href="#mais">mais>>></a>
+
+                    <div className="card list projects">
+                        <h2>Últimos Projetos</h2>
+                        <div className="empty">
+                            <span>
+                                Adicione seus projetos
+                </span>
+                        </div>
+                        <a href="#mais">mais>>></a>
+                    </div>
                 </div>
             </div>
         </>

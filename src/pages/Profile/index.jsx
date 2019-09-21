@@ -16,12 +16,21 @@ export default class Profile extends Component {
                     <img src="add.png" alt="add" />
                 </nav>
 
+
+
                 <div className="card full_profile">
                     eh fogo, nem acabei ainda
 
-                    <div className="details"></div>
-                    <div className="languages"></div>
-                    <div className="prizes"></div>
+                    <div className="details">
+                        details (make this a comp)
+                    </div>
+                    <div className="languages">
+                        languages
+                        <progress min='0' max='100' value='50'></progress>
+                    </div>
+                    <div className="prizes">
+                        prizes
+                    </div>
                 </div>
 
             </div>

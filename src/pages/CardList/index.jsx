@@ -1,8 +1,7 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 import "./style.scss";
-
-import { Link } from "react-router-dom"
 
 
 // FULL HORSE MODE
@@ -38,7 +37,7 @@ export default function CardList() {
 
                     <span className="description">
                         Hackathons participados
-        </span>
+                    </span>
 
                 </div>
 
@@ -50,7 +49,9 @@ export default function CardList() {
                 </span>
                     </div>
 
-                    <a href="hackathonspage.html">mais>>></a>
+                    <Link to="/hackathons">
+                        mais>>>
+                    </Link>
                 </div>
 
                 <div className="card list projects">

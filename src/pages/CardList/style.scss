@@ -53,20 +53,8 @@ justify-content: center;
 
     text-align: center;
 
-    img {
-        position: relative;
-        height: 79px;
-        top: 48px;
-    }
+    // TODO: MOVE TO "COMPONENT"
 
-    // GO HORSE: MODE INSANE
-    .count {
-        position: relative;
-        height: 38px;
-        bottom: 22px;
-        font-size: 35px;
-        line-height: 46px;
-    }
 
     .description {
         position: relative;

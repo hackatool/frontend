@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-import "./style.scss";
+import Icon from './icon';
 
+import "./style.scss";
 
 // FULL HORSE MODE
 import menu from '../../assets/menu.svg';
@@ -10,7 +11,7 @@ import logo from '../../assets/logo.svg';
 import search from '../../assets/search.png';
 
 import homealone from '../../assets/homealone.png';
-import computer_icon from '../../assets/computer_icon.png';
+
 
 export default function CardList() {
     return (
@@ -22,7 +23,7 @@ export default function CardList() {
             </nav>
 
             <div className="container-wrapper">
-                {/* POG (WOP) > GO HORSE */}
+                {/* POG (WOP) >>> GO HORSE */}
                 <div className="container">
 
                     <Link to="/user">
@@ -38,12 +39,12 @@ export default function CardList() {
                     </Link>
 
                     <div className="card counter">
-                        <img src={computer_icon} alt="computer icon" />
-                        <span className="count">319</span>
+
+                        <Icon number={319}></Icon>
 
                         <span className="description">
                             Hackathons participados
-                    </span>
+                        </span>
 
                     </div>
 
@@ -52,12 +53,12 @@ export default function CardList() {
                         <div className="empty">
                             <span>
                                 Adicione já
-                </span>
+                            </span>
                         </div>
 
                         <Link to="/hackathons">
                             mais>>>
-                    </Link>
+                        </Link>
                     </div>
 
                     <div className="card list projects">
@@ -65,7 +66,7 @@ export default function CardList() {
                         <div className="empty">
                             <span>
                                 Adicione seus projetos
-                </span>
+                            </span>
                         </div>
                         <a href="#mais">mais>>></a>
                     </div>

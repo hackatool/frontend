@@ -1,7 +1,10 @@
 import React from 'react'
 
-import homealone from '../assets/homealone.png';
-import computer_icon from '../assets/computer_icon.png';
+import "./style.scss";
+
+// FULL HORSE MODE
+import homealone from '../../assets/homealone.png';
+import computer_icon from '../../assets/computer_icon.png';
 
 export default function CardList() {
     return (
@@ -14,17 +17,17 @@ export default function CardList() {
             </div>
             <div className="card counter">
                 <img src={computer_icon} alt="computer icon" />
-                <span class="count">319</span>
+                <span className="count">319</span>
 
-                <span class="description">
+                <span className="description">
                     Hackathons participados
         </span>
 
             </div>
 
-            <div class="card list hacks">
+            <div className="card list hacks">
                 <h2>Últimos Hackathons</h2>
-                <div class="empty">
+                <div className="empty">
                     <span>
                         Adicione já
                 </span>
@@ -33,9 +36,9 @@ export default function CardList() {
                 <a href="hackathonspage.html">mais>>></a>
             </div>
 
-            <div class="card list projects">
+            <div className="card list projects">
                 <h2>Últimos Projetos</h2>
-                <div class="empty">
+                <div className="empty">
                     <span>
                         Adicione seus projetos
                 </span>

@@ -1,0 +1,111 @@
+@import '../../common/navbar.scss';
+
+.container {
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas:
+        'profile counter'
+        'hacks hacks'
+        'projs projs';
+    gap: 20px;
+}
+
+
+.profile {
+    grid-area: profile;
+    background: linear-gradient(140.79deg, #E66833 0%, #DC3636 48.53%, #FA9468 100%);
+
+    // display: flex;
+    // flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    img {
+        padding-top: 10px;
+    }
+
+    .username {
+        font-size: 19px;
+        line-height: 25px;
+
+        color: #FFFFFF;
+    }
+
+    .description {
+        font-size: 11px;
+        line-height: 14px;
+        text-align: center;
+
+        color: #D7D7D7;
+    }
+}
+
+
+.counter {
+    grid-area: counter;
+
+    text-align: center;
+
+    img {
+        position: relative;
+        height: 79px;
+        top: 48px;
+    }
+
+    // GO HORSE: MODE INSANE
+    .count {
+        position: relative;
+        height: 38px;
+        bottom: 22px;
+        font-size: 35px;
+        line-height: 46px;
+    }
+
+    .description {
+        position: relative;
+        top: 10px;
+    }
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% auto 15%;
+    grid-template-areas:
+        'title'
+        'content'
+        'link';
+    // gap: 20px;
+
+    h2 {
+        grid-area: title;
+        padding-left: 20px;
+        
+    }
+    
+    .empty {
+        grid-area: content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            font-size: 19px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    a {
+        grid-area: link;
+        text-align: right;
+        padding-right: 20px;
+    }
+    
+
+    &.hacks {grid-area: hacks;}
+    &.projects {grid-area: projs;}
+}

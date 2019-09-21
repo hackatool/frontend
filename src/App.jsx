@@ -1,21 +1,21 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import menu from './assets/menu.svg';
-import logo from './assets/logo.svg';
-import search from './assets/search.png';
+import './App.css';
 
-import CardList from "./components/CardList";
+
+// import CardList from "./components/CardList";
+import Routes from './routes';
 
 function App() {
 
   return (
     <div className="App">
-      <nav>
-        <img src={menu} alt="menu" />
-        <img src={logo} alt="logo" />
-        <img src={search} alt="search" />
-      </nav>
-    <CardList/>
+    <BrowserRouter>
+    {/* can use global component here */}
+    <Routes></Routes>
+    </BrowserRouter>
+    
     </div>
   );
 }

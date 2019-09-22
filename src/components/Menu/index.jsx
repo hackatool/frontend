@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 
 import {menuBlock} from "./style.module.scss";
 
@@ -15,7 +16,9 @@ export default class Menu extends Component {
 
                     <ul>
                         <li>Home</li>
-                        <li>Stuff</li>
+                        <li> <Link to="/user">Profile</Link> </li>
+                        <li> <Link to="/hackathons">Eventos</Link> </li>
+                        <li> <Link to="/user">Projetos</Link> </li>
                         <li>More stuff</li>
                         <li>Logout</li>
                     </ul>

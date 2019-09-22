@@ -24,9 +24,16 @@ export default class CardList extends Component {
     }
 
     toggleMenu = () => {
-        this.setState({showMenu: !this.state.showMenu})
+        this.setState({ showMenu: !this.state.showMenu })
     }
-    
+
+    handleRedirect = () => {
+        // return <Redirect push to="/user" />;
+
+        // pog ft. go horse
+        // funk do firdar-se. saudade do vue.
+        window.location = '/user';
+    }
 
     render() {
         return (
@@ -45,19 +52,18 @@ export default class CardList extends Component {
                         src={search}
                         alt="search" />
                 </nav>
-                {/* TODO: toggle menu function */}
 
-                {this.state.showMenu && <Menu onDismiss={ this.toggleMenu } />}
+                {this.state.showMenu && <Menu onDismiss={this.toggleMenu} />}
 
                 {/* POG (WOP) >>> GO HORSE */}
                 <div className="container-wrapper">
                     <div className="container">
 
-                        <Link to="/user">
-                            <div className="card profile">
-                                <UserProfile></UserProfile>
-                            </div>
-                        </Link>
+
+                        <div className="card profile" onClick={this.handleRedirect}>
+                            <UserProfile></UserProfile>
+                        </div>
+
 
                         <div className="card counter">
 
@@ -65,7 +71,7 @@ export default class CardList extends Component {
 
                             <span className="description">
                                 Hackathons participados
-                        </span>
+                            </span>
 
                         </div>
 

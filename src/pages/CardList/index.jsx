@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 import { Link } from "react-router-dom"
 
 import Icon from './icon';
@@ -12,60 +12,79 @@ import search from '../../assets/search.png';
 import UserProfile from '../../components/UserProfile';
 
 
+export default class CardList extends Component {
 
-export default function CardList() {
-    return (
-        <>
-            <nav>
-                <img src={menu} alt="menu" />
-                <img src={logo} alt="logo" />
-                <img src={search} alt="search" />
-            </nav>
+    constructor(props) {
+        super(props);
+        this.state = {
+            showMenu: false,
+            showSearch: false,
+        };
+    }
 
-            {/* POG (WOP) >>> GO HORSE */}
-            <div className="container-wrapper">
-                <div className="container">
+    render() {
+        return (
+            <>
+                <nav>
+                    <img
+                        className="clickable"
+                        src={menu}
+                        alt="menu"
+                        onClick={() => { this.setState({ showMenu: true }) }} />
+                    <img
+                        src={logo}
+                        alt="logo" />
+                    <img
+                        className="clickable"
+                        src={search}
+                        alt="search" />
+                </nav>
 
-                    <Link to="/user">
-                        <div className="card profile">
-                            <UserProfile></UserProfile>
-                        </div>
-                    </Link>
+                {/* POG (WOP) >>> GO HORSE */}
+                <div className="container-wrapper">
+                    <div className="container">
 
-                    <div className="card counter">
+                        <Link to="/user">
+                            <div className="card profile">
+                                <UserProfile></UserProfile>
+                            </div>
+                        </Link>
 
-                        <Icon number={319}></Icon>
+                        <div className="card counter">
 
-                        <span className="description">
-                            Hackathons participados
+                            <Icon number={319}></Icon>
+
+                            <span className="description">
+                                Hackathons participados
                         </span>
 
-                    </div>
-
-                    <div className="card list hacks">
-                        <h2>Últimos Hackathons</h2>
-                        <div className="empty">
-                            <span>
-                                Adicione já
-                            </span>
                         </div>
 
-                        <Link to="/hackathons">
-                            mais>>>
+                        <div className="card list hacks">
+                            <h2>Últimos Hackathons</h2>
+                            <div className="empty">
+                                <span>
+                                    Adicione já
+                            </span>
+                            </div>
+
+                            <Link to="/hackathons">
+                                mais>>>
                         </Link>
-                    </div>
-
-                    <div className="card list projects">
-                        <h2>Últimos Projetos</h2>
-                        <div className="empty">
-                            <span>
-                                Adicione seus projetos
-                            </span>
                         </div>
-                        <a href="#mais">mais>>></a>
+
+                        <div className="card list projects">
+                            <h2>Últimos Projetos</h2>
+                            <div className="empty">
+                                <span>
+                                    Adicione seus projetos
+                            </span>
+                            </div>
+                            <a href="#mais">mais>>></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </>
-    )
+            </>
+        );
+    }
 }

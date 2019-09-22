@@ -27,11 +27,11 @@ export default class Profile extends Component {
                     </div>
                     
                     <div className="languages">
-                        languages
+                        <h2>Linguagens</h2>
                         <progress min='0' max='100' value='50'></progress>
                     </div>
                     <div className="prizes">
-                        prizes
+                        <h2>Prêmios</h2>
                     </div>
                 </div>
 

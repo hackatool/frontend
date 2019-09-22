@@ -1,25 +1,14 @@
 import React, { Component } from 'react'
+import './skillbar.scss';
+
 
 export default class Skillbar extends Component {
-
+    
     styles = {
         progressbarActive: {
-            position: 'absolute',
-            width: `${this.props.progress * this.props.width}px`,
-            height: '10px',
-            borderRadius: '10px',
-
+            width: `${this.props.progress * 100}%`,
             background: this.props.color,
         },
-
-        progressbarBackground: {
-            position: 'absolute',
-            width: `${this.props.width}px`,
-            height: '10px',
-            borderRadius: '10px',
-
-            background: 'rgba(0, 0, 0, 0.6)'
-        }
     }
 
     render() {
@@ -30,8 +19,8 @@ export default class Skillbar extends Component {
                 <span>
                     {this.props.skill}
                 </span>
-                <div style={this.styles.progressbarBackground}></div>
-                <div style={this.styles.progressbarActive}></div>
+                <div className="progressbarBackground" style={this.styles.progressbarBackground}></div>
+                <div className="progressbarActive" style={this.styles.progressbarActive}></div>
             </div>
         )
     }

@@ -1,0 +1,24 @@
+.skillbar {
+    position: relative;
+    width: 80%;
+    margin: 30px;
+}
+
+
+.progressbarActive {
+    position: absolute;
+
+    height: 10px;
+    border-radius: 10px;
+
+}
+
+.progressbarBackground {
+    position: absolute;
+
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+
+    background: rgba(0, 0, 0, 0.6)
+}

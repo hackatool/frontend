@@ -10,6 +10,7 @@ import menu from '../../assets/menu.svg';
 import logo from '../../assets/logo.svg';
 import search from '../../assets/search.png';
 import UserProfile from '../../components/UserProfile';
+import Menu from '../../components/Menu';
 
 
 export default class CardList extends Component {
@@ -39,6 +40,8 @@ export default class CardList extends Component {
                         src={search}
                         alt="search" />
                 </nav>
+
+                {this.state.showMenu && <Menu></Menu>}
 
                 {/* POG (WOP) >>> GO HORSE */}
                 <div className="container-wrapper">

@@ -12,7 +12,7 @@ export default class Profile extends Component {
                 <NavBar title="Profile"></NavBar>
 
                 <div className={['card', styles.full_profile].join(' ')}>
-                    eh fogo, nem acabei ainda
+                    {/* eh fogo, nem acabei ainda */}
 
                     <div className="details">
                         <UserProfile></UserProfile>

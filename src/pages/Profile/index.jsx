@@ -12,7 +12,7 @@ export default class Profile extends Component {
                 <NavBar title="Profile"></NavBar>
 
                 <div className={['card', styles.full_profile].join(' ')}>
-                    {/* eh fogo, nem acabei ainda */}
+                    {/* é fraco. falta-lhe padding */}
 
                     <div className="details">
                         <UserProfile></UserProfile>
@@ -23,6 +23,7 @@ export default class Profile extends Component {
 
                         <Skillbar skill="NodeJS" color="green" progress={0.5} width={200}></Skillbar>
                         <Skillbar skill="ReactJS" color="lightblue" progress={0.7} width={200}></Skillbar>
+                        <Skillbar skill="React Native" color="rgb(111,11,244)" progress={0.6} width={200}></Skillbar>
 
                     </div>
                     <div className="prizes">

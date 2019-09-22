@@ -15,7 +15,7 @@ export default function NavBar(props) {
         </Link>
 
         <h1>{props.title}</h1>
-        <img src={add} alt="add" />
+        <img src={add} alt="add" onClick={props.onAdd} />
     </nav>
     )
 }

@@ -23,6 +23,11 @@ export default class CardList extends Component {
         };
     }
 
+    toggleMenu = () => {
+        this.setState({showMenu: !this.state.showMenu})
+    }
+    
+
     render() {
         return (
             <>
@@ -31,7 +36,7 @@ export default class CardList extends Component {
                         className="clickable"
                         src={menu}
                         alt="menu"
-                        onClick={() => { this.setState({ showMenu: true }) }} />
+                        onClick={this.toggleMenu} />
                     <img
                         src={logo}
                         alt="logo" />
@@ -42,7 +47,7 @@ export default class CardList extends Component {
                 </nav>
                 {/* TODO: toggle menu function */}
 
-                {this.state.showMenu && <Menu onDismiss={ () => {this.setState({showMenu: false})} } />}
+                {this.state.showMenu && <Menu onDismiss={ this.toggleMenu } />}
 
                 {/* POG (WOP) >>> GO HORSE */}
                 <div className="container-wrapper">

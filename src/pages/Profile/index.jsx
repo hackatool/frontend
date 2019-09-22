@@ -8,7 +8,7 @@ export default class Profile extends Component {
     render() {
         return (
             <div className='page'>
-                <NavBar></NavBar>
+                <NavBar title="Profile"></NavBar>
 
                 <div className="card full_profile">
                     eh fogo, nem acabei ainda

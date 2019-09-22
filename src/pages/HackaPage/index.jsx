@@ -7,7 +7,7 @@ export default class HackaPage extends Component {
     render() {
         return (
             <div>
-                <NavBar></NavBar>
+                <NavBar title="Hackathons"></NavBar>
 
                 {/* POG bom e bonito */}
                 <div className={['card', list ].join(' ')}>

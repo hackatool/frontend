@@ -1,4 +1,23 @@
-@import '../../common/navbar.scss';
+// TODO: MAKE CUSTOM NAVBAR based on component
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    h1 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+    
+        color: white;
+    }
+}
+
 
 .container-wrapper {
 width: 100%;
@@ -52,9 +71,6 @@ justify-content: center;
     grid-area: counter;
 
     text-align: center;
-
-    // TODO: MOVE TO "COMPONENT"
-
 
     .description {
         position: relative;

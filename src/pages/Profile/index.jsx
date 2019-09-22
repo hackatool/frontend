@@ -1,23 +1,14 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom"
 
 import './style.scss';
 import UserProfile from '../../components/UserProfile';
+import NavBar from '../../components/NavBar';
 
 export default class Profile extends Component {
     render() {
         return (
             <div className='page'>
-                <nav>
-                    <Link to="/">
-                        <img src="Arrow.svg" alt="back" />
-                    </Link>
-
-                    <h1>Profile</h1>
-                    <img src="add.png" alt="add" />
-                </nav>
-
-
+                <NavBar></NavBar>
 
                 <div className="card full_profile">
                     eh fogo, nem acabei ainda
@@ -25,7 +16,7 @@ export default class Profile extends Component {
                     <div className="details">
                         <UserProfile></UserProfile>
                     </div>
-                    
+
                     <div className="languages">
                         <h2>Linguagens</h2>
                         <progress min='0' max='100' value='50'></progress>

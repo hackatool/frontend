@@ -5,7 +5,7 @@ import Icon from './icon';
 
 import "./style.scss";
 
-// FULL HORSE MODE
+// actually this is how we import the icons
 import menu from '../../assets/menu.svg';
 import logo from '../../assets/logo.svg';
 import search from '../../assets/search.png';
@@ -22,14 +22,14 @@ export default function CardList() {
                 <img src={search} alt="search" />
             </nav>
 
+            {/* POG (WOP) >>> GO HORSE */}
             <div className="container-wrapper">
-                {/* POG (WOP) >>> GO HORSE */}
                 <div className="container">
 
                     <Link to="/user">
-                    <div className="card profile">
-                    <UserProfile></UserProfile>
-                    </div>
+                        <div className="card profile">
+                            <UserProfile></UserProfile>
+                        </div>
                     </Link>
 
                     <div className="card counter">

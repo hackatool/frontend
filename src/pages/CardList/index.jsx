@@ -40,8 +40,9 @@ export default class CardList extends Component {
                         src={search}
                         alt="search" />
                 </nav>
+                {/* TODO: toggle menu function */}
 
-                {this.state.showMenu && <Menu></Menu>}
+                {this.state.showMenu && <Menu onDismiss={ () => {this.setState({showMenu: false})} } />}
 
                 {/* POG (WOP) >>> GO HORSE */}
                 <div className="container-wrapper">

@@ -11,6 +11,7 @@ import logo from '../../assets/logo.svg';
 import search from '../../assets/search.png';
 import UserProfile from '../../components/UserProfile';
 import Menu from '../../components/Menu';
+import SearchBox from '../../components/SearchBox';
 
 
 export default class CardList extends Component {
@@ -26,12 +27,11 @@ export default class CardList extends Component {
     toggleMenu = () => {
         this.setState({ showMenu: !this.state.showMenu })
     }
+    toggleSearch = () => {
+        this.setState({ showSearch: !this.state.showSearch })
+    }
 
     handleRedirect = () => {
-        // return <Redirect push to="/user" />;
-
-        // pog ft. go horse
-        // funk do firdar-se. saudade do vue.
         this.props.history.push('/user');
     }
 
@@ -50,12 +50,13 @@ export default class CardList extends Component {
                     <img
                         className="clickable"
                         src={search}
-                        alt="search" />
+                        alt="search"
+                        onClick={this.toggleSearch} />
                 </nav>
 
+                {this.state.showSearch && <SearchBox onDismiss={this.toggleSearch}/> }
                 {this.state.showMenu && <Menu onDismiss={this.toggleMenu} />}
 
-                {/* POG (WOP) >>> GO HORSE */}
                 <div className="container-wrapper">
                     <div className="container">
 

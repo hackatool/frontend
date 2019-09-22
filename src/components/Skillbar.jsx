@@ -26,7 +26,7 @@ export default class Skillbar extends Component {
         console.log(this.styles);
 
         return (
-            <div>
+            <div className="skillbar" >
                 <span>
                     {this.props.skill}
                 </span>

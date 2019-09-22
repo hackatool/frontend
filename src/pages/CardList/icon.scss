@@ -1,17 +1,18 @@
 .computer-icon {
     margin-top: 48px;
-
-    img {
-        position: relative;
-        // height: 79px;
-        // top: 48px;
-    }
+    position: relative;
 
     .count {
-        // position: relative;
-        height: 38px;
-        bottom: 24px;
+        position: absolute;
+        left: 19.42%;
+        right: 19.42%;
+        top: 17.72%;
+        bottom: 27.85%;
+        
         font-size: 35px;
-        line-height: 40px;
+        line-height: 46px;
+        text-align: center;
+        
+        color: rgba(0, 0, 0, 0.72);
     }
 }

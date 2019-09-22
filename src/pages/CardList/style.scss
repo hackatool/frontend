@@ -73,12 +73,13 @@ justify-content: center;
 
 .counter {
     grid-area: counter;
-
     text-align: center;
+    
 
     .description {
         position: relative;
         top: 10px;
+        // margin: 10px;
     }
 }
 

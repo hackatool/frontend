@@ -73,7 +73,7 @@ export default class CardList extends Component {
 
                             <Link to="/hackathons">
                                 mais>>>
-                        </Link>
+                            </Link>
                         </div>
 
                         <div className="card list projects">

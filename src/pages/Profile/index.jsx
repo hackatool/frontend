@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import styles from './style.module.scss';
 import UserProfile from '../../components/UserProfile';
 import NavBar from '../../components/NavBar';
+import Skillbar from '../../components/Skillbar';
 
 export default class Profile extends Component {
     render() {
@@ -25,12 +26,8 @@ export default class Profile extends Component {
                         <progress min='0' max='100' value='50'></progress>
                         <br/>
 
-                        <div>
-                            NodeJS
-                            {/* make progressbar a new component */}
-                            <div className={styles.progressbarActive}></div>
-                            <div className={styles.progressbarBackground}></div>
-                        </div>
+                    <Skillbar skill="NodeJS" color="green" progress={0.5} width={200}></Skillbar>
+                    <Skillbar skill="ReactJS" color="lightblue" progress={0.7} width={200}></Skillbar>
 
                     </div>
                     <div className="prizes">

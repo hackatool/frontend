@@ -32,7 +32,7 @@ export default class CardList extends Component {
 
         // pog ft. go horse
         // funk do firdar-se. saudade do vue.
-        window.location = '/user';
+        this.props.history.push('/user');
     }
 
     render() {

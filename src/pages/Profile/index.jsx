@@ -20,11 +20,6 @@ export default class Profile extends Component {
 
                     <div className="languages">
                         <h2>Linguagens</h2>
-                        <span>
-                            WOP paradigm:
-                        </span>
-                        <progress min='0' max='100' value='50'></progress>
-                        <br />
 
                         <Skillbar skill="NodeJS" color="green" progress={0.5} width={200}></Skillbar>
                         <Skillbar skill="ReactJS" color="lightblue" progress={0.7} width={200}></Skillbar>
@@ -35,7 +30,7 @@ export default class Profile extends Component {
 
                         <div className={styles.empty}>
                             <span>
-                                Nenhum ainda
+                                Nenhum encontrado
                             </span>
                         </div>
 

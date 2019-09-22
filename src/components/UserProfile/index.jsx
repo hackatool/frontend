@@ -2,6 +2,8 @@ import React from 'react'
 
 import homealone from '../../assets/homealone.png';
 
+import './style.css';
+
 export default function UserProfile() {
     return (
         <>
@@ -10,7 +12,7 @@ export default function UserProfile() {
             </div>
 
             <h2 className="username">user</h2>
-            <span className="description">Developer <br /> UI/UX </span>
+            <span className="user-description">Developer <br /> UI/UX </span>
         </>
     )
 }

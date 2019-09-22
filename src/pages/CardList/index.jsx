@@ -9,8 +9,8 @@ import "./style.scss";
 import menu from '../../assets/menu.svg';
 import logo from '../../assets/logo.svg';
 import search from '../../assets/search.png';
+import UserProfile from '../../components/UserProfile';
 
-import homealone from '../../assets/homealone.png';
 
 
 export default function CardList() {
@@ -27,15 +27,9 @@ export default function CardList() {
                 <div className="container">
 
                     <Link to="/user">
-                        <div className="card profile">
-
-                            <div className="profilepic-wrapper">
-                                <img src={homealone} alt="profile pic" />
-                            </div>
-
-                            <h2 className="username">user</h2>
-                            <span className="description">Developer <br /> UI/UX </span>
-                        </div>
+                    <div className="card profile">
+                    <UserProfile></UserProfile>
+                    </div>
                     </Link>
 
                     <div className="card counter">

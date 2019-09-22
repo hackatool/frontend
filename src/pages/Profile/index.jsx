@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom"
 
 import './style.scss';
+import UserProfile from '../../components/UserProfile';
 
 export default class Profile extends Component {
     render() {
@@ -22,8 +23,9 @@ export default class Profile extends Component {
                     eh fogo, nem acabei ainda
 
                     <div className="details">
-                        details (make this a comp)
+                        <UserProfile></UserProfile>
                     </div>
+                    
                     <div className="languages">
                         languages
                         <progress min='0' max='100' value='50'></progress>

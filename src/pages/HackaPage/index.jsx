@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import NavBar from '../../components/NavBar'
 
 import { list, empty } from './style.module.scss';
+import BoxDialog from '../../components/BoxDialog';
 
 export default class HackaPage extends Component {
 
@@ -30,6 +31,8 @@ export default class HackaPage extends Component {
                     title="Hackathons"
                     onAdd={this.handleAdd}
                 />
+
+               <BoxDialog></BoxDialog>
 
                 {/* POG bom e bonito */}
                 <div className={['card', list].join(' ')}>

@@ -12,8 +12,9 @@ export default class BoxDialog extends Component {
                 </h2>
 
                 <input type="url" name="url" id="link" className={styles.link} />
-                <button className="saveButton">
-                    Salvar
+                {/* todo: trocar por form e input */}
+                <button className={styles.saveButton}>
+                   <span>Salvar</span>
                 </button>
 
             </div>

@@ -8,13 +8,13 @@ export default class BoxDialog extends Component {
             <div className={styles.boxDialog}>
 
                 <h2 className={styles.prompt}>
-                    Link do Hackathon
+                    Hackathon Link
                 </h2>
 
                 <input type="url" name="url" id="link" className={styles.link} />
                 {/* todo: trocar por form e input */}
                 <button className={styles.saveButton}>
-                   <span>Salvar</span>
+                   <span>Save</span>
                 </button>
 
             </div>

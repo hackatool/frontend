@@ -17,9 +17,9 @@ export default class Menu extends Component {
                     <ul>
                         <li>Home</li>
                         <li> <Link to="/user">Profile</Link> </li>
-                        <li> <Link to="/hackathons">Eventos</Link> </li>
-                        <li> <Link to="/user">Projetos</Link> </li>
-                        <li>Mais</li>
+                        <li> <Link to="/hackathons">Events</Link> </li>
+                        <li> <Link to="/user">Projects</Link> </li>
+                        <li>More</li>
                         <li>Logout</li>
                     </ul>
 

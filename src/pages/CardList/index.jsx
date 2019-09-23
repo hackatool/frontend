@@ -71,21 +71,21 @@ export default class CardList extends Component {
                             <Icon number={319}></Icon>
 
                             <span className="description">
-                                Hackathons participados
+                                participated hackathons 
                             </span>
 
                         </div>
 
                         <div className="card list hacks">
-                            <h2>Últimos Hackathons</h2>
+                            <h2>Last Hackathons</h2>
                             <div className="empty">
                                 <span>
-                                    Adicione já
+                                    Add now
                             </span>
                             </div>
 
                             <Link to="/hackathons">
-                                mais>>>
+                                more>>>
                             </Link>
                         </div>
 
@@ -93,10 +93,10 @@ export default class CardList extends Component {
                             <h2>Últimos Times</h2>
                             <div className="empty">
                                 <span>
-                                    Adicione seus times
+                                    Add your teams
                             </span>
                             </div>
-                            <a href="#mais">mais>>></a>
+                            <a href="#more">more>>></a>
                         </div>
                     </div>
                 </div>

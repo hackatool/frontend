@@ -19,7 +19,7 @@ export default class Profile extends Component {
                     </div>
 
                     <div className="languages">
-                        <h2>Linguagens</h2>
+                        <h2>Languages</h2>
 
                         <Skillbar skill="NodeJS" color="green" progress={0.5} width={200}></Skillbar>
                         <Skillbar skill="ReactJS" color="lightblue" progress={0.7} width={200}></Skillbar>
@@ -27,11 +27,11 @@ export default class Profile extends Component {
 
                     </div>
                     <div className="prizes">
-                        <h2>Prêmios</h2>
+                        <h2>Prizes</h2>
 
                         <div className={styles.empty}>
                             <span>
-                                Nenhum encontrado
+                                None found
                             </span>
                         </div>
 

@@ -7,8 +7,8 @@ export default class BoxDialog extends Component {
         return (
             <div className={styles.boxDialog}>
 
-                <h2>
-                    Link do negócio lá
+                <h2 className={styles.prompt}>
+                    Link do Hackathon
                 </h2>
 
                 <input type="url" name="url" id="link" className={styles.link} />

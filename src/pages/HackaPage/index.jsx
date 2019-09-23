@@ -10,19 +10,22 @@ export default class HackaPage extends Component {
         super(props);
         this.state = {
             showAddBox: false,
+            hackathonsList: [],
         };
     }
 
     handleAdd = () => {
-        const data = prompt('[PLACEHOLDER]: Insira o Link do evento');
+        const data = prompt('Insira o Link do evento');
         console.log(data);
+
+        if (data) this.setState({ hackathonsList: [...this.state.hackathonsList, data] })
+
     }
 
     handleSubmit = (event) => {
         event.preventDefault()
         console.log(event);
     }
-    
 
     render() {
         return (
@@ -32,13 +35,28 @@ export default class HackaPage extends Component {
                     onAdd={this.handleAdd}
                 />
 
-               <BoxDialog></BoxDialog>
+                {this.state.showAddBox && <BoxDialog />}
 
-                {/* POG bom e bonito */}
+
                 <div className={['card', list].join(' ')}>
-                    <div className={empty}>
-                        <span>Nenhum encontrado</span>
-                    </div>
+                    <ul>
+                        {
+                            this.state.hackathonsList.length === 0 ?
+                                <div className={empty}>
+                                    <span>Nenhum encontrado</span>
+                                </div>
+
+                                :
+
+                                this.state.hackathonsList.map(item => {
+                                    return <li key={item}>{item}</li>
+                                })
+                        }
+                    </ul>
+
+
+
+
                 </div>
 
             </div>

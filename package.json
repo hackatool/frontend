@@ -2,6 +2,7 @@
   "name": "hackatool-react",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://hackatool.github.io/",
   "dependencies": {
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
@@ -13,7 +14,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "node deploy.js"
   },
   "eslintConfig": {
     "extends": "react-app"

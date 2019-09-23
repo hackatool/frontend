@@ -12,10 +12,12 @@ function App() {
   return (
     <div className="App">
     <BrowserRouter>
-    {/* can use global component here */}
     <Routes></Routes>
     </BrowserRouter>
     
+    <footer>
+      Hackatool - alpha version 0.1
+    </footer>
     </div>
   );
 }

@@ -1,1 +1,16 @@
-/* todo: use globals.scss */
+footer {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    font-size: 10pt;
+    font-family: Fira Code, monospace;
+    color: #a0a0a0;
+}

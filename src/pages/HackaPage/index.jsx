@@ -15,7 +15,7 @@ export default class HackaPage extends Component {
     }
 
     handleAdd = () => {
-        const data = prompt('Insira o Link do evento');
+        const data = prompt('Insert event link');
         console.log(data);
 
         if (data) this.setState({ hackathonsList: [...this.state.hackathonsList, data] })
@@ -43,7 +43,7 @@ export default class HackaPage extends Component {
                         {
                             this.state.hackathonsList.length === 0 ?
                                 <div className={empty}>
-                                    <span>Nenhum encontrado</span>
+                                    <span>None found</span>
                                 </div>
 
                                 :

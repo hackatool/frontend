@@ -8,8 +8,8 @@ export default class SearchBox extends Component {
         return (
             <div className="searchbox-container">
                 <form action="#">
-                    <input type="text" name="who" id="search-input" placeholder="Quem você procura?" />
-                    <input type="image" src={send} alt="Pesquisar" />
+                    <input type="text" name="who" id="search-input" placeholder="Who are you searching for?" />
+                    <input type="image" src={send} alt="Search" />
                 </form>
 
                 <span onClick={this.props.onDismiss}>(back)</span>

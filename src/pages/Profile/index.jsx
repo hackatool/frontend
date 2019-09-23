@@ -14,7 +14,7 @@ export default class Profile extends Component {
                 <div className={['card', styles.full_profile].join(' ')}>
                     {/* é fraco. falta-lhe padding */}
 
-                    <div className="details">
+                    <div className={styles.details}>
                         <UserProfile></UserProfile>
                     </div>
 

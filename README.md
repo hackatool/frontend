@@ -1,4 +1,4 @@
-*é um WIP ainda*
+Repositório arquivado. Foi parte do hackathon Open Hack de 2019.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
